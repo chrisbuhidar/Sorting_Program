@@ -4,7 +4,9 @@
 
 int main(){
     int size;
+
     printf("Size of Array: ");
+    
     scanf("%d", &size);
 
     int unsorted_array[size];
@@ -32,7 +34,9 @@ int main(){
             }
         }
     }
+
     printf("Sorted Array: ");
+
     for (int i = 0; i < size; i++){
         if (i < size -1 ){
             printf("%d,", unsorted_array[i]);
