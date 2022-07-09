@@ -1,15 +1,19 @@
 #include <stdio.h>
 
-int unsorted_array[5];
-int size = sizeof(unsorted_array) / sizeof(unsorted_array[0]);
+
 
 int main(){
+    int size;
+    printf("Size of Array: ");
+    scanf("%d", &size);
 
-    for (int i =0; i < size; i++){
+    int unsorted_array[size];
+
+    for (int i = 0; i < size; i++){
         printf("Input Number: ");
         scanf("%d",&unsorted_array[i]);
     }
-
+    printf("Unsorted Array: ");
     for (int i = 0; i < size; i++){
         if (i < size -1 ){
             printf("%d,", unsorted_array[i]);
@@ -28,7 +32,7 @@ int main(){
             }
         }
     }
-
+    printf("Sorted Array: ");
     for (int i = 0; i < size; i++){
         if (i < size -1 ){
             printf("%d,", unsorted_array[i]);
